@@ -7,25 +7,30 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Browser {
 
 	public static WebDriver driver;
 
 	public static WebDriver getDriver() {
-		driver = setDriver("Firefox");
+		driver = setDriver(System.getProperty("browser.name"));
 		return driver;
 	}
 
 	public static WebDriver setDriver(String browserName) {
 
 		if ("Firefox".equals(browserName)) {
+			//WebDriverManager.firefoxdriver().setup();
 			return new FirefoxDriver();
 		}
 
 		else if ("IE".equals(browserName)) {
+			//WebDriverManager.iedriver().setup();
 			return new InternetExplorerDriver();
 
 		} else {
+			//WebDriverManager.chromedriver().setup();
 			return new ChromeDriver();
 
 		}

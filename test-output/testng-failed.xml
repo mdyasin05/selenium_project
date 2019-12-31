@@ -6,6 +6,7 @@
       <class name="com.testcase.TestLoginUsingFramework">
         <methods>
           <include name="validateLoginUsingCorrectCredential"/>
+          <include name="closeBrowser"/>
           <include name="initialization"/>
         </methods>
       </class> <!-- com.testcase.TestLoginUsingFramework -->

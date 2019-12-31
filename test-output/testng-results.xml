@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27734" started-at="2019-12-28T14:18:09 EST" finished-at="2019-12-28T14:18:36 EST">
+  <suite name="Default suite" duration-ms="11734" started-at="2019-12-31T16:57:11 EST" finished-at="2019-12-31T16:57:22 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27734" started-at="2019-12-28T14:18:09 EST" finished-at="2019-12-28T14:18:36 EST">
+    <test name="Default test" duration-ms="11734" started-at="2019-12-31T16:57:11 EST" finished-at="2019-12-31T16:57:22 EST">
       <class name="com.testcase.TestLoginUsingFramework">
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.testcase.TestLoginUsingFramework@5b87ed94]" name="initialization" is-config="true" duration-ms="17558" started-at="2019-12-28T14:18:09 EST" finished-at="2019-12-28T14:18:26 EST">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.testcase.TestLoginUsingFramework@3d99d22e]" name="initialization" is-config="true" duration-ms="6231" started-at="2019-12-31T16:57:11 EST" finished-at="2019-12-31T16:57:17 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@5b87ed94]" name="validateLoginUsingCorrectCredential" duration-ms="6282" started-at="2019-12-28T14:18:26 EST" finished-at="2019-12-28T14:18:33 EST">
+        <test-method status="PASS" signature="validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@3d99d22e]" name="validateLoginUsingCorrectCredential" duration-ms="5357" started-at="2019-12-31T16:57:17 EST" finished-at="2019-12-31T16:57:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUsingCorrectCredential -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testcase.TestLoginUsingFramework@5b87ed94]" name="closeBrowser" is-config="true" duration-ms="3780" started-at="2019-12-28T14:18:33 EST" finished-at="2019-12-28T14:18:36 EST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testcase.TestLoginUsingFramework@3d99d22e]" name="closeBrowser" is-config="true" duration-ms="87" started-at="2019-12-31T16:57:22 EST" finished-at="2019-12-31T16:57:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

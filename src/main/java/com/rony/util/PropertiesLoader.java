@@ -1,4 +1,4 @@
-package com.rony.util.common;
+package com.rony.util;
 
 import java.io.File;
 import java.io.FileInputStream;

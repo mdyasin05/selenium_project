@@ -9,10 +9,11 @@ import org.testng.annotations.BeforeClass;
 
 import com.rony.pages.LoginPage;
 import com.rony.pages.WelcomePage;
-import com.rony.util.common.Browser;
-import com.rony.util.common.PropertiesLoader;
+import com.rony.util.Browser;
+import com.rony.util.PropertiesLoader;
+import com.rony.util.TestReport;
 
-public class TestBase {
+public class TestBase extends TestReport{
 
 	public static WebDriver driver;
 	public static LoginPage login;
@@ -29,8 +30,11 @@ public class TestBase {
 
 	}
 
-	public static void invokeURL() {
+	public void invokeURL() {
 		driver.get(System.getProperty("base.url"));
+	}
+	public void invokeURL1() {
+		driver.get(System.getProperty("base.ur"));
 	}
 
 	@AfterClass

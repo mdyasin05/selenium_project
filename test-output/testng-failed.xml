@@ -5,9 +5,12 @@
     <classes>
       <class name="com.testcase.TestLoginUsingFramework">
         <methods>
-          <include name="validateLoginUsingCorrectCredential"/>
+          <include name="validateLoginUsingincorrectCorrectCredential"/>
           <include name="closeBrowser"/>
+          <include name="setExtent"/>
           <include name="initialization"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.testcase.TestLoginUsingFramework -->
     </classes>

@@ -1,7 +1,5 @@
 package com.testcase;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.rony.baseClass.TestBase;
@@ -9,7 +7,10 @@ import com.rony.baseClass.TestBase;
 public class TestLoginUsingFramework extends TestBase {
 	
 	@Test
-	public static void validateLoginUsingCorrectCredential() throws InterruptedException {
+	public void validateLoginUsingCorrectCredential() throws InterruptedException {
+		testReport=extent.createTest("Validate login for correct credentials ");
+		
+		
 		
 		invokeURL();
 		Thread.sleep(2000);
@@ -18,20 +19,15 @@ public class TestLoginUsingFramework extends TestBase {
 		login.enterPassword(); 
 		login.hitLogInButton();
 		 
-		
-		
-		
-		
-		/*
-		 * driver.findElement(By.id("txtUsername")).sendKeys("opensourcecms");
-		 * driver.findElement(By.id("txtPassword")).sendKeys("opensourcecms");
-		 * driver.findElement(By.id("btnLogin")).click(); String expected =
-		 * "Welcome Admin"; String actual =
-		 * driver.findElement(By.xpath("//*[@id=\"option-menu\"]/li[1]")).getText();
-		 * Assert.assertEquals(actual, expected);
-		 */
+
 		
 	}
+	@Test
+	public void validateLoginUsingincorrectCorrectCredential() {
+		testReport=extent.createTest("Validate login for incorrect credentials ");
+		invokeURL1();
+	}
+	
 	
 
 }

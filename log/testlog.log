@@ -1,26 +1,5 @@
-2020-02-01 09:44:48,919 - TestLoginUsingFramework -INFO - invoked into the url
-2020-02-01 09:46:46,492 - TestLoginUsingFramework -INFO - invoked into the url
-2020-02-01 09:46:46,630 - TestLoginUsingFramework -INFO - Enter the username
-2020-02-01 09:46:46,719 - TestLoginUsingFramework -INFO - Enter the password
-2020-02-01 09:49:47,084 - TestLoginUsingFramework -INFO - invoked into the url
-2020-02-01 09:49:49,255 - TestLoginUsingFramework -INFO - Enter the username
-2020-02-01 09:49:49,347 - TestLoginUsingFramework -INFO - Enter the password
-2020-02-01 09:54:34,079 - TestLoginUsingFramework -INFO - invoked into the url
-2020-02-01 09:54:36,236 - TestLoginUsingFramework -INFO - Username entered
-2020-02-01 09:54:36,237 - TestLoginUsingFramework -INFO - Enter the username
-2020-02-01 09:54:36,334 - TestLoginUsingFramework -INFO - Enter the password
-2020-02-01 10:05:30,373 - TestLoginUsingFramework -INFO - Username entered
-2020-02-01 10:05:30,377 - TestLoginUsingFramework -INFO - Enter the username
-2020-02-01 10:05:30,480 - TestLoginUsingFramework -INFO - Enter the password
-2020-02-01 10:08:58,895 - TestLoginUsingFramework -INFO - Invoked the URL
-2020-02-01 10:09:01,036 - TestLoginUsingFramework -INFO - Username entered
-2020-02-01 10:09:03,498 - TestLoginUsingFramework -ERROR - Error occured while invoking the url
-2020-02-01 10:14:43,070 - TestLoginUsingFramework -INFO - Invoked the URL
-2020-02-01 10:14:45,216 - TestLoginUsingFramework -INFO - Username entered
-2020-02-01 10:14:45,665 - TestLoginUsingFramework -ERROR - Error occured while invoking the url
-2020-02-01 10:17:09,310 - TestLoginUsingFramework -INFO - Invoked the URL
-2020-02-01 10:17:11,358 - TestLoginUsingFramework -ERROR - failed while entering the username
-2020-02-01 10:17:11,600 - TestLoginUsingFramework -ERROR - Error occured while invoking the url
-2020-02-01 10:27:00,997 - TestLoginUsingFramework -INFO - Invoked the URL
-2020-02-01 10:27:03,052 - TestLoginUsingFramework -ERROR - failed while entering the username
-2020-02-01 10:27:03,306 - TestLoginUsingFramework -ERROR - Error occured while invoking the url
+2020-02-05 20:14:20,746 - TestLoginUsingFramework -INFO - Opened the url
+2020-02-05 20:14:22,794 - TestLoginUsingFramework -INFO - Entered the username
+2020-02-05 20:14:22,827 - TestLoginUsingFramework -INFO - Entered the password
+2020-02-05 20:18:52,987 - TestLoginUsingFramework -INFO - invoked url successfully
+2020-02-05 20:20:21,204 - TestLoginUsingFramework -ERROR - Error occured while invoking the url

@@ -5,6 +5,7 @@
     <classes>
       <class name="com.testcase.TestLoginUsingFramework">
         <methods>
+          <include name="validateLoginUsingCorrectCredential"/>
           <include name="validateLoginUsingincorrectCorrectCredential"/>
           <include name="closeBrowser"/>
           <include name="setExtent"/>

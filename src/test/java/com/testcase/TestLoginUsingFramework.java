@@ -13,13 +13,14 @@ public class TestLoginUsingFramework extends TestBase {
 		
 		
 		invokeURL();
-		Thread.sleep(2000);
-		login.enterUserName(); 
-		login.enterPassword(); 		
-		login.hitLogInButton();
-		 
-
 		
+		Thread.sleep(2000);
+		login.enterUserName();
+		
+		login.enterPassword();
+		
+		login.hitLogInButton();
+		 		
 	}
 	@Test
 	public void validateLoginUsingincorrectCorrectCredential() {

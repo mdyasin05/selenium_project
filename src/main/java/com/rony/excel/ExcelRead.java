@@ -51,6 +51,7 @@ public class ExcelRead {
             //Print Excel data in console
 
             System.out.print(row.getCell(j).getStringCellValue()+"|| ");
+            
 
         }
 
@@ -69,11 +70,11 @@ public class ExcelRead {
 
     //Prepare the path of excel file
 
-    String filePath = System.getProperty("user.dir")+"\\files";
+    String filePath = System.getProperty("user.dir")+"\\ExcelFile";
 
     //Call read file method of the class to read data
 
-    objExcelFile.readExcel(filePath,"Md_Test.xlsx","Sheet1");
+    objExcelFile.readExcel(filePath,"Employee.xlsx","Sheet1");
 
     }
 

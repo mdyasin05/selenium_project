@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13181" started-at="2020-01-27T21:34:08 EST" finished-at="2020-01-27T21:34:21 EST">
+  <suite name="Default suite" duration-ms="13818" started-at="2020-02-02T21:24:34 EST" finished-at="2020-02-02T21:24:47 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13181" started-at="2020-01-27T21:34:08 EST" finished-at="2020-01-27T21:34:21 EST">
+    <test name="Default test" duration-ms="13818" started-at="2020-02-02T21:24:34 EST" finished-at="2020-02-02T21:24:47 EST">
       <class name="com.testcase.TestLoginUsingFramework">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="setExtent" is-config="true" duration-ms="183" started-at="2020-01-27T21:34:08 EST" finished-at="2020-01-27T21:34:08 EST">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="setExtent" is-config="true" duration-ms="167" started-at="2020-02-02T21:24:34 EST" finished-at="2020-02-02T21:24:34 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="initialization" is-config="true" duration-ms="6101" started-at="2020-01-27T21:34:08 EST" finished-at="2020-01-27T21:34:14 EST">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="initialization" is-config="true" duration-ms="4095" started-at="2020-02-02T21:24:34 EST" finished-at="2020-02-02T21:24:38 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="validateLoginUsingCorrectCredential" duration-ms="6304" started-at="2020-01-27T21:34:14 EST" finished-at="2020-01-27T21:34:20 EST">
+        <test-method status="PASS" signature="validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="validateLoginUsingCorrectCredential" duration-ms="8164" started-at="2020-02-02T21:24:38 EST" finished-at="2020-02-02T21:24:46 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUsingCorrectCredential -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="tearDown" is-config="true" duration-ms="10" started-at="2020-01-27T21:34:20 EST" finished-at="2020-01-27T21:34:20 EST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="tearDown" is-config="true" duration-ms="12" started-at="2020-02-02T21:24:46 EST" finished-at="2020-02-02T21:24:46 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginUsingCorrectCredential status=SUCCESS method=TestLoginUsingFramework.validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345] output={null}]]]>
+                <![CDATA[[TestResult name=validateLoginUsingCorrectCredential status=SUCCESS method=TestLoginUsingFramework.validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="validateLoginUsingincorrectCorrectCredential" duration-ms="2" started-at="2020-01-27T21:34:20 EST" finished-at="2020-01-27T21:34:20 EST">
+        <test-method status="FAIL" signature="validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="validateLoginUsingincorrectCorrectCredential" duration-ms="2" started-at="2020-02-02T21:24:46 EST" finished-at="2020-02-02T21:24:46 EST">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: url=null]]>
@@ -42,8 +42,8 @@ at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBi
 at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
 at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.rony.baseClass.TestBase.invokeURL1(TestBase.java:37)
-at com.testcase.TestLoginUsingFramework.validateLoginUsingincorrectCorrectCredential(TestLoginUsingFramework.java:28)
+at com.rony.baseClass.TestBase.invokeURL1(TestBase.java:43)
+at com.testcase.TestLoginUsingFramework.validateLoginUsingincorrectCorrectCredential(TestLoginUsingFramework.java:27)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -78,22 +78,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUsingincorrectCorrectCredential -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-01-27T21:34:20 EST" finished-at="2020-01-27T21:34:20 EST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-02T21:24:46 EST" finished-at="2020-02-02T21:24:46 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginUsingincorrectCorrectCredential status=FAILURE method=TestLoginUsingFramework.validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345] output={null}]]]>
+                <![CDATA[[TestResult name=validateLoginUsingincorrectCorrectCredential status=FAILURE method=TestLoginUsingFramework.validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="closeBrowser" is-config="true" duration-ms="73" started-at="2020-01-27T21:34:20 EST" finished-at="2020-01-27T21:34:20 EST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="closeBrowser" is-config="true" duration-ms="964" started-at="2020-02-02T21:24:46 EST" finished-at="2020-02-02T21:24:47 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.testcase.TestLoginUsingFramework@68bbe345]" name="endReport" is-config="true" duration-ms="449" started-at="2020-01-27T21:34:20 EST" finished-at="2020-01-27T21:34:21 EST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.testcase.TestLoginUsingFramework@1d29cf23]" name="endReport" is-config="true" duration-ms="365" started-at="2020-02-02T21:24:47 EST" finished-at="2020-02-02T21:24:47 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

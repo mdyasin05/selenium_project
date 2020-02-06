@@ -14,9 +14,8 @@ public class TestLoginUsingFramework extends TestBase {
 		
 		invokeURL();
 		Thread.sleep(2000);
-		
 		login.enterUserName(); 
-		login.enterPassword(); 
+		login.enterPassword(); 		
 		login.hitLogInButton();
 		 
 

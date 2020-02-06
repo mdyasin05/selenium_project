@@ -15,7 +15,9 @@ public class LoginPage extends PageBase{
 	//Actions
 	
 	public void enterUserName() {
+		
 		username.sendKeys("opensourcecms");
+		
 	}
 	public void enterPassword() {
 		password.sendKeys("opensourcecms");

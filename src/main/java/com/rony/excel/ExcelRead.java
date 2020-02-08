@@ -3,79 +3,60 @@ package com.rony.excel;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import java.util.Iterator;
+ 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
+ 
+/**
+ * A dirty simple program that reads an Excel file.
+ * @author Md Hasan
+ *
+ */
 public class ExcelRead {
-	
-	
+     
+    public static void main(String[] args) throws IOException {
+    	
+    	File file= new File(System.getProperty("user.dir")+"/ExcelFile/Employee.xlsx");
+       
+        FileInputStream inputStream = new FileInputStream(file);
+         
+        Workbook workbook = new XSSFWorkbook(inputStream);
+//       Workbook workbook1= new XSSFWorkbook(new FileInputStream(new File(System.getProperty("user.dir")+"/ExcelFile/Employee.xlsx")));
+        
+        Sheet firstSheet = workbook.getSheet("Sheet1");
+        
+        Iterator<Row> rowIterator = firstSheet.iterator();
+         
+        while (rowIterator.hasNext()) {
+            Row nextRow = rowIterator.next();
+            Iterator<Cell> cellIterator = nextRow.cellIterator();
+             
+            while (cellIterator.hasNext()) {
+                Cell cell = cellIterator.next();
+                 
+                switch (cell.getCellType()) {
+                    case STRING:
+                        System.out.print(cell.getStringCellValue());
+                        break;
+                    case NUMERIC:
+                        System.out.print(cell.getNumericCellValue());
+                        break;
+                    default:
+					break;
 
-    public void readExcel(String filePath,String fileName,String sheetName) throws IOException{
-
-    File file =    new File(filePath+"\\"+fileName);
-    FileInputStream inputStream = new FileInputStream(file);
-    Workbook workbook = null;
-
-    //Find the file extension by splitting file name in substring  and getting only extension name
-    String fileExtension = fileName.substring(fileName.indexOf("."));
-
-    //Check condition if the file is xlsx/xls file
-    if(fileExtension.equals(".xlsx")){
-    	workbook = new XSSFWorkbook(inputStream);
-
-    }
-    else if(fileExtension.equals(".xls")){
-        	workbook = new HSSFWorkbook(inputStream);
-
-    }
-
-    //Read sheet inside the workbook by its name
-    Sheet sheet = workbook.getSheet(sheetName);
-
-    //Find number of rows in excel file
-    int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
-
-    //Create a loop over all the rows of excel file to read it
-    for (int i = 0; i < rowCount+1; i++) {
-
-        Row row = sheet.getRow(i);
-
-        //Create a loop to print cell values in a row
-
-        for (int j = 0; j < row.getLastCellNum(); j++) {
-
-            //Print Excel data in console
-
-            System.out.print(row.getCell(j).getStringCellValue()+"|| ");
-            
-
+                }
+                System.out.print(" | ");
+            }
+            System.out.println();
         }
-
-        System.out.println();
-    } 
-
-    }  
-
-    //Main function is calling readExcel function to read data from excel file
-
-    public static void main(String...strings) throws IOException{
-
-    //Create an object of ReadGuru99ExcelFile class
-
-    ExcelRead objExcelFile = new ExcelRead();
-
-    //Prepare the path of excel file
-
-    String filePath = System.getProperty("user.dir")+"\\ExcelFile";
-
-    //Call read file method of the class to read data
-
-    objExcelFile.readExcel(filePath,"Employee.xlsx","Sheet1");
-
+         
+        workbook.close();
+        inputStream.close();
     }
-
+ 
 }
+ 

@@ -3,3 +3,5 @@
 2020-02-05 20:14:22,827 [main] INFO TestLoginUsingFramework - Entered the password
 2020-02-05 20:18:52,987 [main] INFO TestLoginUsingFramework - invoked url successfully
 2020-02-05 20:20:21,204 [main] ERROR TestLoginUsingFramework - Error occured while invoking the url
+2020-02-09 11:23:12,958 [main] INFO TestLoginUsingFramework - invoked url successfully
+2020-02-10 15:40:39,835 [main] INFO TestLoginUsingFramework - invoked url successfully

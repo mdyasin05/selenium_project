@@ -21,21 +21,21 @@ public class ExcelRead {
     public static void main(String[] args) throws IOException {
     	
     	File file= new File(System.getProperty("user.dir")+"/ExcelFile/Employee.xlsx");
-    	//File file2= new File(System.getProperty("user.dir")+"/ExcelFile/Test.xlsx");
        
         FileInputStream inputStream = new FileInputStream(file);
          
         Workbook workbook = new XSSFWorkbook(inputStream);
-//       Workbook workbook1= new XSSFWorkbook(new FileInputStream(new File(System.getProperty("user.dir")+"/ExcelFile/Employee.xlsx")));
+        // Workbook workbook1= new XSSFWorkbook(new FileInputStream(new File(System.getProperty("user.dir")+"/ExcelFile/Employee.xlsx")));
         
         Sheet firstSheet = workbook.getSheet("Sheet1");
         
         Iterator<Row> rowIterator = firstSheet.iterator();
-         
+
         while (rowIterator.hasNext()) {
             Row nextRow = rowIterator.next();
-            Iterator<Cell> cellIterator = nextRow.cellIterator();
-             
+            
+            Iterator<Cell> cellIterator = nextRow.cellIterator();   
+            
             while (cellIterator.hasNext()) {
                 Cell cell = cellIterator.next();
                  
@@ -43,9 +43,11 @@ public class ExcelRead {
                     case STRING:
                         System.out.print(cell.getStringCellValue());
                         break;
+                        
                     case NUMERIC:
                         System.out.print(cell.getNumericCellValue());
                         break;
+                        
                     default:
 					break;
 

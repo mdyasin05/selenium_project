@@ -24,7 +24,6 @@ public class TestBase extends TestReport{
 	public static WelcomePage welcome;
 	public static Logger logger;
 	
-
 	@BeforeClass
 	public static void initialization() throws FileNotFoundException, IOException {
 
@@ -34,8 +33,6 @@ public class TestBase extends TestReport{
 		login= new LoginPage();
 		welcome=new WelcomePage();
 		
-		
-
 	}
 
 	public void invokeURL() {
@@ -47,8 +44,6 @@ public class TestBase extends TestReport{
 		logger.error("Error occured while invoking the url");
 				
 		}
-		
-		
 		
 	}
 	public void invokeURL1() {

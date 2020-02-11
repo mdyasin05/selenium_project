@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  
 /**
  * A dirty simple program that reads an Excel file.
- * @author Md Hasan
+ *
  *
  */
 public class ExcelRead {
@@ -21,6 +21,7 @@ public class ExcelRead {
     public static void main(String[] args) throws IOException {
     	
     	File file= new File(System.getProperty("user.dir")+"/ExcelFile/Employee.xlsx");
+    	//File file2= new File(System.getProperty("user.dir")+"/ExcelFile/Test.xlsx");
        
         FileInputStream inputStream = new FileInputStream(file);
          

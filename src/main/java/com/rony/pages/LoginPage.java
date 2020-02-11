@@ -20,6 +20,7 @@ public class LoginPage extends PageBase{
 		
 	}
 	public void enterPassword() {
+		
 		password.sendKeys("opensourcecms");
 	}
 	
@@ -27,7 +28,4 @@ public class LoginPage extends PageBase{
 		logInButton.click();
 	}
 	
-	
-	
-
 }

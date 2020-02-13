@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20544" started-at="2020-02-11T14:59:25 EST" finished-at="2020-02-11T14:59:45 EST">
+  <suite started-at="2020-02-12T20:23:20 EST" name="Default suite" finished-at="2020-02-12T20:23:55 EST" duration-ms="35564">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20544" started-at="2020-02-11T14:59:25 EST" finished-at="2020-02-11T14:59:45 EST">
+    <test started-at="2020-02-12T20:23:20 EST" name="Default test" finished-at="2020-02-12T20:23:55 EST" duration-ms="35564">
       <class name="com.testcase.TestLoginUsingFramework">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="setExtent" is-config="true" duration-ms="203" started-at="2020-02-11T14:59:25 EST" finished-at="2020-02-11T14:59:25 EST">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:20 EST" name="setExtent" finished-at="2020-02-12T20:23:20 EST" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="initialization" is-config="true" duration-ms="6703" started-at="2020-02-11T14:59:25 EST" finished-at="2020-02-11T14:59:32 EST">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:20 EST" name="initialization" finished-at="2020-02-12T20:23:40 EST" duration-ms="20107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="validateLoginUsingCorrectCredential" duration-ms="8200" started-at="2020-02-11T14:59:32 EST" finished-at="2020-02-11T14:59:40 EST">
+        <test-method signature="validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:40 EST" name="validateLoginUsingCorrectCredential" finished-at="2020-02-12T20:23:49 EST" duration-ms="8421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUsingCorrectCredential -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="tearDown" is-config="true" duration-ms="42" started-at="2020-02-11T14:59:40 EST" finished-at="2020-02-11T14:59:40 EST">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:49 EST" name="tearDown" finished-at="2020-02-12T20:23:49 EST" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginUsingCorrectCredential status=SUCCESS method=TestLoginUsingFramework.validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5] output={null}]]]>
+                <![CDATA[[TestResult name=validateLoginUsingCorrectCredential status=SUCCESS method=TestLoginUsingFramework.validateLoginUsingCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="validateLoginUsingincorrectCorrectCredential" duration-ms="3" started-at="2020-02-11T14:59:40 EST" finished-at="2020-02-11T14:59:40 EST">
+        <test-method signature="validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:49 EST" name="validateLoginUsingincorrectCorrectCredential" finished-at="2020-02-12T20:23:49 EST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[null value in entry: url=null]]>
@@ -44,31 +44,31 @@ at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
 at com.rony.baseClass.TestBase.invokeURL1(TestBase.java:51)
 at com.testcase.TestLoginUsingFramework.validateLoginUsingincorrectCorrectCredential(TestLoginUsingFramework.java:28)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -78,22 +78,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginUsingincorrectCorrectCredential -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-02-11T14:59:40 EST" finished-at="2020-02-11T14:59:40 EST">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:49 EST" name="tearDown" finished-at="2020-02-12T20:23:49 EST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginUsingincorrectCorrectCredential status=FAILURE method=TestLoginUsingFramework.validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5] output={null}]]]>
+                <![CDATA[[TestResult name=validateLoginUsingincorrectCorrectCredential status=FAILURE method=TestLoginUsingFramework.validateLoginUsingincorrectCorrectCredential()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="closeBrowser" is-config="true" duration-ms="4565" started-at="2020-02-11T14:59:40 EST" finished-at="2020-02-11T14:59:45 EST">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:49 EST" name="closeBrowser" finished-at="2020-02-12T20:23:54 EST" duration-ms="5178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.testcase.TestLoginUsingFramework@ea1a8d5]" name="endReport" is-config="true" duration-ms="766" started-at="2020-02-11T14:59:45 EST" finished-at="2020-02-11T14:59:45 EST">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.testcase.TestLoginUsingFramework@5be6e01c]" started-at="2020-02-12T20:23:54 EST" name="endReport" finished-at="2020-02-12T20:23:55 EST" duration-ms="1207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

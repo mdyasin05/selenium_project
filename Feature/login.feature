@@ -29,13 +29,6 @@ Feature: LogIn Test
 			And hit login button
 		  Then Verify the Welcome page
 		  
-	 Scenario: Validate the login functionality using invalid usename
-
-			Given Invoke the URL in chrome browser
-			When Enter the invalid username
-			And Enter the password
-			And hit login button
-		  Then Verify the Welcome page
 		  
 	
     

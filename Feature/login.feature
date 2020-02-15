@@ -9,6 +9,8 @@
 #Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
 #Examples: Container for s table
 #Background: List of steps run before each of the scenarios
+# refeence to number 11, 27. its means the common steps thats not require to write again and again
+# for example opening the browser
 #""" (Doc Strings)
 #| (Data Tables)
 #@ (Tags/Labels):To group Scenarios
@@ -20,7 +22,7 @@
 Feature: LogIn Test
   I want to Test the login here
 
-  
+  @Regression
   Scenario: Validate the login functionality using valid credentials
 
 			Given Invoke the URL in chrome browser
@@ -29,9 +31,22 @@ Feature: LogIn Test
 			And hit login button
 		  Then Verify the Welcome page
 		  
-		  
-	
-    
+	@Functional  
+	 Scenario Outline: Validate login functionality using the sneario outline
 
+    
+   		Given Invoke the URL in chrome browser
+			When Enter the username "<username>"
+			And Enter the password "<password>"
+			And hit login button
+		  Then Verify the Welcome page
+
+    Examples: 
+      | username      | password         |
+      | opensourcecms | opensourcecms    |
+      | test          | test             |
+      | test1         | test2            |
+    
+   
 
  

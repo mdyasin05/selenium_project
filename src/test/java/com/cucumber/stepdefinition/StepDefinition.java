@@ -7,6 +7,7 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.jupiter.api.BeforeAll;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
@@ -24,8 +25,6 @@ import cucumber.api.java.en.When;
 public class StepDefinition {
 	
 	public static WebDriver driver;
-	public static LoginPage login;
-	public static WelcomePage welcome;
 	public static Logger logger;
 	
 	@Before
@@ -34,8 +33,7 @@ public class StepDefinition {
 		PropertiesLoader.loadProperties();
 		driver = Browser.getDriver();
 		logger=LogSetUp.myLog();
-		//login= new LoginPage();
-		welcome=new WelcomePage();
+
 		
 	}
 	
@@ -48,8 +46,9 @@ public class StepDefinition {
 
 	@When("^Enter the username$")
 	public void enter_the_username() throws Throwable {
-		login= new LoginPage();
-		login.enterUserName();
+
+		driver.findElement(By.id("txtUsername")).sendKeys("opensourcecms");
+		
 
 	}
 	@When("^Enter the invalid username$")
@@ -60,13 +59,13 @@ public class StepDefinition {
 
 	@When("^Enter the password$")
 	public void enter_the_password() throws Throwable {
-		System.out.println("Enter the password");
+		driver.findElement(By.id("txtPassword")).sendKeys("opensourcecms");
 
 	}
 
 	@When("^hit login button$")
 	public void hit_login_button() throws Throwable {
-		System.out.println("Hit the login button");
+		driver.findElement(By.id("btnLogin")).click();
 
 	}
 
@@ -75,6 +74,21 @@ public class StepDefinition {
 		System.out.println("verify the Welcomepage");
 
 	}
+	
+	@When("^Enter the username \"([^\"]*)\"$")
+	public void enter_the_username(String username) throws Throwable {
+		driver.findElement(By.id("txtUsername")).sendKeys(username);
+	 
+	}
+
+	@When("^Enter the password \"([^\"]*)\"$")
+	public void enter_the_password(String password) throws Throwable {
+		
+		driver.findElement(By.id("txtPassword")).sendKeys(password);
+
+	}
+	
+
 
 
 }

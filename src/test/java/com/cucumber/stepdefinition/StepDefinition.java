@@ -39,7 +39,7 @@ public class StepDefinition {
 	
 	@Given("^Invoke the URL in chrome browser$")
 	public void invoke_the_URL_in_chrome_browser() throws Throwable {
-		driver.get("https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login");
+		driver.get(System.getProperty("base.url"));
 		Thread.sleep(3000);
 	    
 	}
